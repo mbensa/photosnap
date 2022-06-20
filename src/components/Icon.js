@@ -2,8 +2,11 @@ import React from 'react';
 import { ReactComponent as Arrow } from '../assets/shared/desktop/arrow.svg';
 
 export default function Icon(props) {
-    const {modifier, stroke} = props;
+    const styles = {
+        stroke: props.dark ? '#000000' : '#FFFFFF'
+    }
+
     return(
-        <Arrow  />
+        <Arrow style={styles}/>
     )
 }

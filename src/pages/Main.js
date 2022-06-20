@@ -13,7 +13,7 @@ export default function Main() {
     <Button style="banana">my button</Button>
     <Logo />
     <Social />
-    <Icon />
+    <Icon dark={dark}/>
     
     </>
   )
