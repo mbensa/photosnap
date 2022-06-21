@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import {Link as DefaultLink} from 'react-router-dom'
 
 export default function Link(props) {
@@ -10,4 +10,5 @@ export default function Link(props) {
 }
 
 
-//https://v5.reactrouter.com/web/guides/quick-start add changes to app.js, put router around and switch
+https://v5.reactrouter.com/web/guides/quick-start add changes to app.js, put router around and switch
+*/

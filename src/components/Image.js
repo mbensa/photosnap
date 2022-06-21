@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export default function Image(props) {
-  const {src, alt} = props;
+  const { src, alt } = props;
 
-  return(
-    <img src={src} alt={alt}/>
-  )
+  return <img src={src} alt={alt} />;
 }

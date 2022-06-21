@@ -1,0 +1,29 @@
+button {
+  padding: 12px 24px;
+  border: none;
+}
+
+.darkBtn {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.whiteBtn {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btnHover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.opaqueDark {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.opaqueWhite {
+  color: var(--white);
+  background-color: var(--white);
+}

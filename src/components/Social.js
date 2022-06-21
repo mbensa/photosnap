@@ -6,13 +6,13 @@ import { ReactComponent as Twitter } from '../assets/shared/desktop/twitter.svg'
 import { ReactComponent as Youtube } from '../assets/shared/desktop/youtube.svg';
 
 export default function Social() {
-    return (
-        <div>
-            <Facebook />
-            <Youtube />
-            <Twitter />
-            <Pinterest />
-            <Instagram />   
-        </div>
-    )
+  return (
+    <div>
+      <Facebook />
+      <Youtube />
+      <Twitter />
+      <Pinterest />
+      <Instagram />
+    </div>
+  );
 }
