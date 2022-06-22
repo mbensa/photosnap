@@ -7,7 +7,7 @@ import { ReactComponent as Exposure } from '../assets/features/desktop/boost-exp
 import { ReactComponent as Domain } from '../assets/features/desktop/custom-domain.svg';
 import { ReactComponent as DragDrop } from '../assets/features/desktop/drag-drop.svg';
 
-const images = {
+const featureImages = {
   responsive: Responsive,
   noLimit: NoLimit,
   embed: Embed,
@@ -17,12 +17,12 @@ const images = {
 };
 
 export default function FeatureBox(props) {
-  const { title, text, feature } = props;
-  const FeatureImage = images[feature];
+  const { title, text, feature, alt } = props;
+  const FeatureImage = featureImages[feature];
 
   return (
     <div>
-      <FeatureImage />
+      <FeatureImage feature={feature} alt={alt} />
       <Text type="h3">{title}</Text>
       <Text type="p">{text}</Text>
     </div>

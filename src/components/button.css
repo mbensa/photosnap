@@ -20,10 +20,10 @@ button {
 
 .opaqueDark {
   color: var(--black);
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 .opaqueWhite {
   color: var(--white);
-  background-color: var(--white);
+  background-color: transparent;
 }
