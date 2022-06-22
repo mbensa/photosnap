@@ -18,11 +18,12 @@ const featureImages = {
 
 export default function FeatureBox(props) {
   const { title, text, feature, alt } = props;
+
   const FeatureImage = featureImages[feature];
 
   return (
     <div>
-      <FeatureImage feature={feature} alt={alt} />
+      <FeatureImage alt={alt} />
       <Text type="h3">{title}</Text>
       <Text type="p">{text}</Text>
     </div>

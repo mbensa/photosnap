@@ -4,6 +4,7 @@ import Text from './Text';
 
 export default function ToggleSwitch() {
   const [isToggled, setIsToggled] = useState(false);
+  
   const onToggle = () => setIsToggled(!isToggled);
 
   return (
@@ -21,3 +22,5 @@ export default function ToggleSwitch() {
     </div>
   );
 }
+
+//put state in parent container and then pass down isToggled and on Toggle as props
