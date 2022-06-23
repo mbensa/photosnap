@@ -21,9 +21,11 @@ button {
 .opaqueDark {
   color: var(--black);
   background-color: transparent;
+  padding: 0;
 }
 
 .opaqueWhite {
   color: var(--white);
   background-color: transparent;
+  padding: 0;
 }
