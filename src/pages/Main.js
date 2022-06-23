@@ -15,7 +15,14 @@ import Card from '../components/Card';
 export default function Main() {
   return (
     <>
-      <FeatureBox title="title" text="text" feature="embed" alt="image" />
+      <InfoSection
+        title="CREATE AND SHARE YOUR PHOTO STORIES."
+        message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
+        style="opaqueDark"
+        btnText="GET AN INVITE"
+        dark="true"
+      />
+
       <ToggleSwitch />
       <Card
         alt="image"

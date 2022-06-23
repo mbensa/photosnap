@@ -1,0 +1,9 @@
+.featureBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureBoxHeading {
+  margin: 48px 0 16px 0;
+}

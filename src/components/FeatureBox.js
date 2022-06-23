@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from './Text';
+import './featureBox.css';
 import { ReactComponent as Responsive } from '../assets/features/desktop/responsive.svg';
 import { ReactComponent as NoLimit } from '../assets/features/desktop/no-limit.svg';
 import { ReactComponent as Embed } from '../assets/features/desktop/embed.svg';
@@ -22,9 +23,11 @@ export default function FeatureBox(props) {
   const FeatureImage = featureImages[feature];
 
   return (
-    <div>
+    <div className="featureBoxContainer">
       <FeatureImage alt={alt} />
-      <Text type="h3">{title}</Text>
+      <Text type="h3" className="featureBoxHeading">
+        {title}
+      </Text>
       <Text type="p">{text}</Text>
     </div>
   );
