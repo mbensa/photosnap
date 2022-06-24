@@ -1,0 +1,20 @@
+.cardBg {
+  background-repeat: no-repeat;
+  padding: 0 40px;
+  color: var(--white);
+  background-size: cover;
+}
+
+.cardDate {
+  padding: 215px 0 5px 0px;
+}
+
+.cardAuthor {
+  padding: 5px 0 15px 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: white;
+}

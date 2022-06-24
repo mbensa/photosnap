@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Text from './Text';
 import Button from './Button';
+import './card.css';
 import desktopVoyage from '../assets/stories/desktop/18-days-voyage.jpg';
 import desktopArchitecturals from '../assets/stories/desktop/architecturals.jpg';
 import desktopWaves from '../assets/stories/desktop/behind-the-waves.jpg';
@@ -76,7 +77,7 @@ const cardMobileUrls = {
   tour: mobileTour,
 };
 export default function Card(props) {
-  const { image, cardHeading, cardText } = props;
+  const { image, cardHeading, cardAuthor, cardDate } = props;
 
   const cardDesktopUrl = cardDesktopUrls[image];
   const cardMobileUrl = cardMobileUrls[image];
@@ -99,8 +100,13 @@ export default function Card(props) {
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <Text type="p" className="cardDate">
+        {cardDate}
+      </Text>
       <Text type="h3">{cardHeading}</Text>
-      <Text type="p">{cardText}</Text>
+      <Text type="p" className="cardAuthor">
+        {cardAuthor}
+      </Text>
       <hr />
       <Button style="opaqueWhite" icon={true}>
         READ STORY

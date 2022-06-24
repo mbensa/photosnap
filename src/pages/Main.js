@@ -27,7 +27,8 @@ export default function Main() {
       <Card
         alt="image"
         cardHeading="The Mountains"
-        cardText="by John Appleseed"
+        cardAuthor="by John Appleseed"
+        cardDate="Apr 7th 2000"
         image="voyage"></Card>
     </>
   );
