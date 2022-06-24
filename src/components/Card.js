@@ -100,6 +100,7 @@ export default function Card(props) {
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div className='cardContainer'>
       <Text type="p" className="cardDate">
         {cardDate}
       </Text>
@@ -111,6 +112,7 @@ export default function Card(props) {
       <Button style="opaqueWhite" icon={true}>
         READ STORY
       </Button>
+    </div>
     </div>
   );
 }
