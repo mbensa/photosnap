@@ -3,10 +3,16 @@
   padding: 0 40px;
   color: var(--white);
   background-size: cover;
+  min-height: 375px;
+  padding-bottom: 40px;
 }
 
-.cardDate {
-  padding: 215px 0 5px 0px;
+.cardTextContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .cardAuthor {
@@ -16,5 +22,25 @@
 hr {
   border: none;
   height: 1px;
-  color: white;
+  background-color: var(--white);
+}
+
+.cardButton {
+  padding: 20px 0 40px 0;
+}
+
+hr {
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .cardBg {
+    min-height: 500px;
+  }
+}
+
+.cardBtn {
+  display: flex;
+  justify-content: space-between;
 }

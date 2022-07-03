@@ -1,0 +1,17 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

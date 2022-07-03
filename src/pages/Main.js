@@ -1,4 +1,5 @@
 import React from 'react';
+import './main.css';
 import Text from '../components/Text';
 import Image from '../components/Image';
 import Button from '../components/Button';
@@ -18,18 +19,20 @@ export default function Main() {
       <InfoSection
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
-        style="opaqueDark"
+        buttonClass="opaqueDark"
         btnText="GET AN INVITE"
         dark="true"
       />
 
       <ToggleSwitch />
-      <Card
-        alt="image"
-        cardHeading="The Mountains"
-        cardAuthor="by John Appleseed"
-        cardDate="Apr 7th 2000"
-        image="voyage"></Card>
+      <div className="cardContainer">
+        <Card
+          alt="image"
+          cardHeading="The Mountains"
+          cardAuthor="by John Appleseed"
+          cardDate="Apr 7th 2000"
+          image="voyage"></Card>
+      </div>
     </>
   );
 }

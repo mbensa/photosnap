@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import Text from './Text';
 import Button from './Button';
 import './card.css';
@@ -76,6 +76,7 @@ const cardMobileUrls = {
   corners: mobileCorners,
   tour: mobileTour,
 };
+
 export default function Card(props) {
   const { image, cardHeading, cardAuthor, cardDate } = props;
 
@@ -83,16 +84,14 @@ export default function Card(props) {
   const cardMobileUrl = cardMobileUrls[image];
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   const imageUrl = windowWidth >= 768 ? cardDesktopUrl : cardMobileUrl;
 
+  const handleWindowResize = useCallback(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
+
   useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
     window.addEventListener('resize', handleWindowResize);
-
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
@@ -100,17 +99,19 @@ export default function Card(props) {
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <Text type="p" className="cardDate">
-        {cardDate}
-      </Text>
-      <Text type="h3">{cardHeading}</Text>
-      <Text type="p" className="cardAuthor">
-        {cardAuthor}
-      </Text>
-      <hr />
-      <Button style="opaqueWhite" icon={true}>
-        READ STORY
-      </Button>
+      <div className="cardTextContainer">
+        <Text type="p" className="cardDate">
+          {cardDate}
+        </Text>
+        <Text type="h3">{cardHeading}</Text>
+        <Text type="p" className="cardAuthor">
+          {cardAuthor}
+        </Text>
+        <hr />
+        <Button buttonClass="opaqueWhite cardBtn" icon={true}>
+          READ STORY
+        </Button>
+      </div>
     </div>
   );
 }

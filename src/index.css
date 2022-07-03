@@ -10,6 +10,8 @@ body {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
 }
 
 :root {
@@ -22,4 +24,11 @@ body {
     #bc7198 43.46%,
     #5a77ff 83.33%
   );
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
 }
