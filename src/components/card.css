@@ -1,7 +1,8 @@
 .cardBg {
   background-repeat: no-repeat;
-  padding: 0 40px;
   color: var(--white);
+  width: 375px;
+  height: 375px;
   background-size: cover;
   min-height: 375px;
   padding-bottom: 40px;
@@ -43,4 +44,21 @@ hr {
 .cardBtn {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .cardBg {
+    height: 500px;
+    width: 384px;
+  }
+
+  .cardDate {
+    padding: 340px 0 5px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cardBg {
+    width: 360px;
+  }
 }
