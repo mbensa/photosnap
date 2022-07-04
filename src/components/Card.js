@@ -92,10 +92,11 @@ export default function Card(props) {
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
+
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
-  }, []);
+  }, [handleWindowResize]);
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
