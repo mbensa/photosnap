@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './main.css';
 import Text from '../components/Text';
 import Image from '../components/Image';
@@ -13,8 +13,21 @@ import PlanBox from '../components/PlanBox';
 import ToggleSwitch from '../components/ToggleSwitch';
 import Card from '../components/Card';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Main() {
+  const [active, setActive] = useState('');
+
+  const handleChange = (e) => {
+    console.log(e);
+
+    const { id } = e.target;
+
+    if (id !== active) {
+      setActive(id);
+    }
+  };
+
   return (
     <>
       <Header />
@@ -44,6 +57,8 @@ export default function Main() {
           btnText="PICK PLAN"
           inputName="radio1"
           inputId="planBox1"
+          onChange={handleChange}
+          checked={active === 'planBox1'}
         />
         <PlanBox
           heading="Basic"
@@ -53,8 +68,11 @@ export default function Main() {
           btnText="PICK PLAN"
           inputName="radio1"
           inputId="planBox2"
+          onChange={handleChange}
+          checked={active === 'planBox2'}
         />
       </div>
+      <Footer />
     </>
   );
 }

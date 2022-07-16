@@ -4,10 +4,10 @@ import Icon from './Icon';
 import './button.css';
 
 export default function Button(props) {
-  const { children, buttonClass, icon, dark } = props;
+  const { children, buttonClass, icon, dark, ...rest } = props;
 
   return (
-    <button className={buttonClass}>
+    <button className={buttonClass} {...rest}>
       <Text type="h4">{children}</Text>
       {icon && <Icon dark={dark} />}
     </button>

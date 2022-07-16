@@ -50,7 +50,7 @@ input:checked + label > .darkBtn {
   color: var(--black);
 }
 
-input:hover + label > .darkBtn {
+.darkBtn:hover {
   background-color: var(--grey);
   color: var(--black);
 }
