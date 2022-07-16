@@ -2,6 +2,7 @@ button {
   padding: 12px 24px;
   border: none;
   display: flex;
+  cursor: pointer;
 }
 
 .darkBtn {
@@ -23,10 +24,12 @@ button {
   color: var(--black);
   background-color: transparent;
   padding: 0;
+  gap: 20px;
 }
 
 .opaqueWhite {
   color: var(--white);
   background-color: transparent;
   padding: 0;
+  gap: 20px;
 }

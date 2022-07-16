@@ -1,0 +1,118 @@
+/********************************
+*******Plan Box Copmonent********
+********************************/
+
+.planBoxLabel {
+  background-color: #f5f5f5;
+  position: relative;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'line'
+    'heading'
+    'text'
+    'pricing'
+    'subtext'
+    'btn';
+  text-align: center;
+  cursor: pointer;
+}
+
+.planBoxLine {
+  display: none;
+  position: absolute;
+  margin: 0;
+  opacity: 1;
+  background: var(--main);
+  height: 6px;
+  width: calc(100% + 40px);
+  top: -40px;
+  left: -20px;
+  grid-area: line;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+input:checked + label > hr {
+  display: block;
+}
+
+input:checked + label > .darkBtn {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+input:hover + label > .darkBtn {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.planBoxHeading {
+  grid-area: heading;
+}
+
+.planBoxText {
+  padding: 20px 0 40px 0;
+  opacity: 0.6;
+  grid-area: text;
+}
+
+.planBoxSubtext {
+  opacity: 0.6;
+  padding-bottom: 40px;
+  grid-area: subtext;
+}
+
+.planBoxPricing {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  grid-area: pricing;
+}
+
+.darkBtn {
+  justify-content: center;
+  grid-area: btn;
+}
+
+input:checked + label > .planBoxLine {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .planBoxLabel {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'line line'
+      'heading pricing'
+      'text subtext'
+      'btn .';
+    text-align: left;
+    padding: 40px;
+  }
+
+  .planBoxLine {
+    width: 6px;
+    height: 252px;
+    left: -40px;
+  }
+
+  .planBoxPricing {
+    justify-self: end;
+  }
+
+  .planBoxSubtext {
+    justify-self: end;
+  }
+
+  .planBoxText {
+    padding: 20px 0 30px 0;
+  }
+}

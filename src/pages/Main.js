@@ -12,10 +12,12 @@ import FeatureBox from '../components/FeatureBox';
 import PlanBox from '../components/PlanBox';
 import ToggleSwitch from '../components/ToggleSwitch';
 import Card from '../components/Card';
+import Header from '../components/Header';
 
 export default function Main() {
   return (
     <>
+      <Header />
       <InfoSection
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
@@ -32,6 +34,26 @@ export default function Main() {
           cardAuthor="by John Appleseed"
           cardDate="Apr 7th 2000"
           image="voyage"></Card>
+      </div>
+      <div>
+        <PlanBox
+          heading="Basic"
+          text="Includes basic usage of our platform."
+          pricing="$19.00"
+          subtext="per month"
+          btnText="PICK PLAN"
+          inputName="radio1"
+          inputId="planBox1"
+        />
+        <PlanBox
+          heading="Basic"
+          text="Includes basic usage of our platform."
+          pricing="$19.00"
+          subtext="per month"
+          btnText="PICK PLAN"
+          inputName="radio1"
+          inputId="planBox2"
+        />
       </div>
     </>
   );
