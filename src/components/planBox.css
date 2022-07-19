@@ -86,7 +86,7 @@ input:checked + label > .planBoxLine {
   display: block;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .planBoxLabel {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -114,5 +114,15 @@ input:checked + label > .planBoxLine {
 
   .planBoxText {
     padding: 20px 0 30px 0;
+  }
+}
+
+@media (min-width: 1281px) {
+  input + label {
+    transition: transform 0.5s;
+  }
+
+  input:checked + label {
+    transform: scale(1.1);
   }
 }

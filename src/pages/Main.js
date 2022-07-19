@@ -14,6 +14,7 @@ import ToggleSwitch from '../components/ToggleSwitch';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Section from '../components/Section';
 
 export default function Main() {
   const [active, setActive] = useState('');
@@ -34,9 +35,17 @@ export default function Main() {
       <InfoSection
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
-        buttonClass="opaqueDark"
+        buttonClass="opaqueWhite"
         btnText="GET AN INVITE"
-        dark="true"
+        darkBg
+      />
+      <Section
+        image="stories"
+        title="CREATE AND SHARE YOUR PHOTO STORIES."
+        message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
+        buttonClass="opaqueWhite"
+        btnText="GET AN INVITE"
+        darkBg
       />
 
       <ToggleSwitch />
