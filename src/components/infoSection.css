@@ -1,8 +1,27 @@
-.infoSectionDark {
-  background-color: var(--black);
-  color: var(--white);
+/********************************
+*****Info Section Copmonent******
+********************************/
+
+.infoSectionContainer {
+  padding: 70px 30px;
 }
 
 .infoSectionMessage {
   padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .infoSectionContainer {
+  padding: 170px 50px ;
+  }
+
+  .infoSectionMessage {
+    padding: 20px 0 48px 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .infoSectionContainer {
+  padding: 170px 110px ;
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import InfoSection from './InfoSection';
 import Image from './Image';
+import './section.css';
 
 export default function Section(props) {
   const {
@@ -11,7 +12,7 @@ export default function Section(props) {
     buttonClass,
     btnText,
     dark,
-    infoSectionClass,
+
     darkBg,
     infoFirst,
   } = props;
@@ -19,9 +20,8 @@ export default function Section(props) {
   return (
     <div>
       {infoFirst ? (
-        <div>
+        <div className="sectionContainer">
           <InfoSection
-            infoSectionClass={infoSectionClass}
             title={title}
             message={message}
             buttonClass={buttonClass}
@@ -32,10 +32,9 @@ export default function Section(props) {
           <Image image={image} alt={alt} />
         </div>
       ) : (
-        <div>
+        <div className="sectionContainer">
           <Image image={image} alt={alt} />
           <InfoSection
-            infoSectionClass={infoSectionClass}
             title={title}
             message={message}
             buttonClass={buttonClass}

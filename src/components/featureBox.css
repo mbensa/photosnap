@@ -1,3 +1,7 @@
+/********************************
+******Feature Box Copmonent******
+********************************/
+
 .featureBoxContainer {
   display: flex;
   flex-direction: column;

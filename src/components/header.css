@@ -1,3 +1,7 @@
+/********************************
+********Header Copmonent*********
+********************************/
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -93,7 +97,7 @@
   }
 
   .navbar {
-    padding: 24px 28px;
+    padding: 28px 30px;
     margin: 0;
   }
 

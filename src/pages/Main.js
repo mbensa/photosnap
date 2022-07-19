@@ -35,9 +35,9 @@ export default function Main() {
       <InfoSection
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
-        buttonClass="opaqueWhite"
+        buttonClass="opaqueDark"
         btnText="GET AN INVITE"
-        darkBg
+        dark
       />
       <Section
         image="stories"
