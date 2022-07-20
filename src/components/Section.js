@@ -12,9 +12,9 @@ export default function Section(props) {
     buttonClass,
     btnText,
     dark,
-
     darkBg,
     infoFirst,
+    button,
   } = props;
 
   return (
@@ -41,6 +41,7 @@ export default function Section(props) {
             btnText={btnText}
             dark={dark}
             darkBg={darkBg}
+            button={button}
           />
         </div>
       )}

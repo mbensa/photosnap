@@ -1,0 +1,51 @@
+/********************************
+**********Hero Copmonent*********
+********************************/
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTextContainer {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 50px 30px;
+}
+
+.heroTitle {
+  padding: 15px 0;
+}
+
+.heroText {
+  padding: 25px 0;
+  opacity: 0.6;
+}
+
+.heroDate {
+  opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+  .heroImage {
+    display: none;
+  }
+
+  .heroContainer {
+    background-image: url("../assets/stories/tablet/moon-of-appalacia.jpg");
+    background-size: cover;
+    padding: 120px 30px;
+  }
+
+  .heroTextContainer {
+    width: 50%;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1280px) {
+  .heroContainer {
+    background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
+    padding: 120px 110px;
+  }
+}

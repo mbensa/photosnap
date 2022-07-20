@@ -4,7 +4,7 @@ import Button from './Button';
 import './infoSection.css';
 
 export default function InfoSection(props) {
-  const { title, message, buttonClass, btnText, dark, darkBg } = props;
+  const { title, message, buttonClass, btnText, dark, darkBg, button } = props;
 
   const styles = {
     backgroundColor: darkBg ? '#000000' : '#FFFFFF',
@@ -17,9 +17,11 @@ export default function InfoSection(props) {
       <Text type="p" className="infoSectionMessage">
         {message}
       </Text>
-      <Button buttonClass={buttonClass} icon={true} dark={dark}>
-        {btnText}
-      </Button>
+      {button && (
+        <Button buttonClass={buttonClass} icon={true} dark={dark}>
+          {btnText}
+        </Button>
+      )}
     </div>
   );
 }

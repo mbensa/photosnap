@@ -16,6 +16,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
 import Beta from '../components/Beta';
+import Hero from '../components/Hero';
 
 export default function Main() {
   const [active, setActive] = useState('');
@@ -40,7 +41,7 @@ export default function Main() {
         btnText="GET AN INVITE"
         dark
       />
-      <Beta />
+      <Hero />
 
       <ToggleSwitch />
       <div className="cardContainer">
