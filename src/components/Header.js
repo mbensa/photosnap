@@ -18,17 +18,17 @@ export default function Header() {
       <ul className={`nav-menu${toggle ? ' active' : ''}`}>
         <li className="nav-item">
           <a className="nav-link">
-            <Text type="h4">STORIES</Text>
+            <Text type="h5">STORIES</Text>
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link">
-            <Text type="h4">FEATURES</Text>
+            <Text type="h5">FEATURES</Text>
           </a>
         </li>
         <li className="nav-item">
           <a className="nav-link">
-            <Text type="h4">PRICING</Text>
+            <Text type="h5">PRICING</Text>
           </a>
         </li>
         <li className="nav-button">

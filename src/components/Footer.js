@@ -16,16 +16,16 @@ export default function Footer() {
           <Social socialClass="socialMedia"></Social>
         </div>
         <div className="textFooterContainer">
-          <Text type="h4" className="textFooter">
+          <Text type="h5" className="textFooter">
             HOME
           </Text>
-          <Text type="h4" className="textFooter">
+          <Text type="h5" className="textFooter">
             STORIES
           </Text>
-          <Text type="h4" className="textFooter">
+          <Text type="h5" className="textFooter">
             FEATURES
           </Text>
-          <Text type="h4" className="textFooter">
+          <Text type="h5" className="textFooter">
             PRICING
           </Text>
         </div>

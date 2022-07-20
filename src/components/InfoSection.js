@@ -13,7 +13,7 @@ export default function InfoSection(props) {
 
   return (
     <div className="infoSectionContainer" style={styles}>
-      <Text type="h1">{title}</Text>
+      <Text type="h2">{title}</Text>
       <Text type="p" className="infoSectionMessage">
         {message}
       </Text>

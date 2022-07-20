@@ -8,7 +8,7 @@ export default function Button(props) {
 
   return (
     <button className={buttonClass} {...rest}>
-      <Text type="h4">{children}</Text>
+      <Text type="h5">{children}</Text>
       {icon && <Icon dark={dark} />}
     </button>
   );

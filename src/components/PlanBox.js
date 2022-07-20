@@ -39,13 +39,13 @@ export default function PlanBox(props) {
       />
       <label htmlFor={inputId} className="planBoxLabel">
         <hr className="planBoxLine" />
-        <Text type="h2" className="planBoxHeading">
+        <Text type="h3" className="planBoxHeading">
           {heading}
         </Text>
         <Text type="p" className="planBoxText">
           {text}
         </Text>
-        <Text type="h2" className="planBoxPricing">
+        <Text type="h3" className="planBoxPricing">
           {pricing}
         </Text>
         <Text type="p" className="planBoxSubtext">

@@ -29,11 +29,11 @@ export default function Section(props) {
             dark={dark}
             darkBg={darkBg}
           />
-          <Image image={image} alt={alt} />
+          <Image className="sectionImage" image={image} alt={alt} />
         </div>
       ) : (
         <div className="sectionContainer">
-          <Image image={image} alt={alt} />
+          <Image className="sectionImage" image={image} alt={alt} />
           <InfoSection
             title={title}
             message={message}

@@ -46,7 +46,7 @@ const imgMobileUrls = {
 };
 
 export default function Image(props) {
-  const { alt, image } = props;
+  const { alt, image, className } = props;
 
   const imgDesktopUrl = imgDesktopUrls[image];
   const imgTabletUrl = imgTabletUrls[image];
@@ -76,5 +76,5 @@ export default function Image(props) {
     };
   }, [handleWindowResize]);
 
-  return <img src={imageUrl} alt={alt} />;
+  return <img src={imageUrl} alt={alt} className={className} />;
 }

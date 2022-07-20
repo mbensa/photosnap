@@ -1,0 +1,62 @@
+/********************************
+**********Beta Component*********
+********************************/
+.betaContainer {
+  background-image: url("../assets/shared/mobile/bg-beta.jpg");
+  background-size: cover;
+  padding: 60px 30px;
+  position: relative;
+}
+
+.betaText {
+  color: var(--white);
+  padding-bottom: 25px;
+}
+
+.betaLine {
+  position: absolute;
+  width: 130px;
+  height: 6px;
+  top: 0;
+  background: var(--main);
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .betaContainer {
+    background-image: url("../assets/shared/tablet/bg-beta.jpg");
+    display: flex;
+    align-items: center;
+    padding: 70px 30px;
+  }
+
+  .betaLine {
+    height: 100%;
+    width: 6px;
+    left: 0;
+  }
+
+  .betaText {
+    width: 60%;
+  }
+
+  .betaButton {
+    width: 40%;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1280px) {
+  .betaContainer {
+    background-image: url("../assets/shared/desktop/bg-beta.jpg");
+    padding: 70px 165px;
+  }
+
+  .betaText {
+    width: 40%;
+  }
+
+  .betaButton {
+    width: 60%;
+  }
+}

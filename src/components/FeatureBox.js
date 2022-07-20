@@ -25,7 +25,7 @@ export default function FeatureBox(props) {
   return (
     <div className="featureBoxContainer">
       <FeatureImage alt={alt} />
-      <Text type="h3" className="featureBoxHeading">
+      <Text type="h4" className="featureBoxHeading">
         {title}
       </Text>
       <Text type="p">{text}</Text>

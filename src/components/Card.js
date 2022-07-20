@@ -104,7 +104,7 @@ export default function Card(props) {
         <Text type="p" className="cardDate">
           {cardDate}
         </Text>
-        <Text type="h3">{cardHeading}</Text>
+        <Text type="h4">{cardHeading}</Text>
         <Text type="p" className="cardAuthor">
           {cardAuthor}
         </Text>
