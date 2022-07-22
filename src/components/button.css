@@ -31,9 +31,17 @@ button {
   gap: 20px;
 }
 
+.opaqueDark:hover {
+  text-decoration: underline;
+}
+
 .opaqueWhite {
   color: var(--white);
   background-color: transparent;
   padding: 0;
   gap: 20px;
+}
+
+.opaqueWhite:hover {
+  text-decoration: underline;
 }

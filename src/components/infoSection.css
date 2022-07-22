@@ -4,6 +4,19 @@
 
 .infoSectionContainer {
   padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.infoSectionLine {
+  position: absolute;
+  width: 130px;
+  height: 6px;
+  top: 0;
+  background: var(--main);
+  opacity: 1;
 }
 
 .infoSectionMessage {
@@ -23,5 +36,14 @@
 @media (min-width: 1280px) {
   .infoSectionContainer {
   padding: 170px 110px ;
+  }
+}
+
+@media (min-width: 768px) {
+  .infoSectionLine {
+    height: 50%;
+    width: 6px;
+    left: 0;
+    top: auto;
   }
 }

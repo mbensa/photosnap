@@ -4,7 +4,8 @@ import Button from './Button';
 import './infoSection.css';
 
 export default function InfoSection(props) {
-  const { title, message, buttonClass, btnText, dark, darkBg, button } = props;
+  const { title, message, buttonClass, btnText, dark, darkBg, button, line } =
+    props;
 
   const styles = {
     backgroundColor: darkBg ? '#000000' : '#FFFFFF',
@@ -13,6 +14,7 @@ export default function InfoSection(props) {
 
   return (
     <div className="infoSectionContainer" style={styles}>
+      {line && <hr className="infoSectionLine" />}
       <Text type="h2">{title}</Text>
       <Text type="p" className="infoSectionMessage">
         {message}

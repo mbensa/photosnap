@@ -8,7 +8,7 @@ import './hero.css';
 export default function Hero() {
   return (
     <div className="heroContainer">
-      <img src={heroImage} className="heroImage"></img>
+      <img src={heroImage} className="heroImage" alt="hazy full moon" />
       <div className="heroTextContainer">
         <Text type="h5">LAST MONTH'S FEATURED STORY</Text>
         <Text type="h2" className="heroTitle">

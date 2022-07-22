@@ -12,37 +12,39 @@ export default function Header() {
   }
 
   return (
-    <nav className="navbar">
-      <Logo></Logo>
+    <header>
+      <nav className="navbar">
+        <Logo></Logo>
 
-      <ul className={`nav-menu${toggle ? ' active' : ''}`}>
-        <li className="nav-item">
-          <a className="nav-link">
-            <Text type="h5">STORIES</Text>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link">
-            <Text type="h5">FEATURES</Text>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link">
-            <Text type="h5">PRICING</Text>
-          </a>
-        </li>
-        <li className="nav-button">
-          <Button buttonClass="darkBtn">GET AN INVITE</Button>
-        </li>
-      </ul>
+        <ul className={`nav-menu${toggle ? ' active' : ''}`}>
+          <li className="nav-item">
+            <a className="nav-link">
+              <Text type="h5">STORIES</Text>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link">
+              <Text type="h5">FEATURES</Text>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link">
+              <Text type="h5">PRICING</Text>
+            </a>
+          </li>
+          <li className="nav-button">
+            <Button buttonClass="darkBtn">GET AN INVITE</Button>
+          </li>
+        </ul>
 
-      <div
-        className={`hamburger${toggle ? ' active' : ''}`}
-        onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
-    </nav>
+        <div
+          className={`hamburger${toggle ? ' active' : ''}`}
+          onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </nav>
+    </header>
   );
 }
