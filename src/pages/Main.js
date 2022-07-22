@@ -17,6 +17,7 @@ import Footer from '../components/Footer';
 import Section from '../components/Section';
 import Beta from '../components/Beta';
 import Hero from '../components/Hero';
+import CompareBox from '../components/CompareBox';
 
 export default function Main() {
   const [active, setActive] = useState('');
@@ -34,6 +35,7 @@ export default function Main() {
   return (
     <>
       <Header />
+      <CompareBox />
       <InfoSection
         title="CREATE AND SHARE YOUR PHOTO STORIES."
         message="Photosnap is a plafrom for photographers and vidual storytellers. We make it easy to share photos, tell stories and connect with others."
@@ -76,6 +78,7 @@ export default function Main() {
           checked={active === 'planBox2'}
         />
       </div>
+      <Beta />
       <Footer />
     </>
   );

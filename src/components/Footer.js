@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Text from '../components/Text';
 import Button from './Button';
 import Social from './Social';
@@ -7,7 +7,7 @@ import { ReactComponent as LogoWhiteSvg } from '../assets/shared/desktop/logoWhi
 
 export default function Footer() {
   return (
-    <div className="footerContainer">
+    <footer className="footerContainer">
       <div className="firstFooterContainer">
         <div className="logoFooterContainer">
           <LogoWhiteSvg></LogoWhiteSvg>
@@ -38,6 +38,6 @@ export default function Footer() {
           Copyright 2022. All Rights Reserved
         </Text>
       </div>
-    </div>
+    </footer>
   );
 }

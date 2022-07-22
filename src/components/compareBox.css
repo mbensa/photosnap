@@ -1,0 +1,46 @@
+/********************************
+******Compare Box Copmonent******
+********************************/
+.compareBoxContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.compareLineMain {
+  height: 2px;
+  background-color: var(--black);
+  opacity: 1;
+  margin: 23px 0;
+}
+
+.comparePlanTypeContainer {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-around;
+}
+
+.compareLine {
+  height: 1px;
+  background-color: var(--grey);
+  opacity: 1;
+  margin-bottom: 15px;
+}
+
+.compareBoxTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.compareBoxPlan {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.compareBoxWidth {
+  width: 25%;
+  text-align: center;
+}
+
+.compareBoxStyle {
+  text-align: left;
+}
