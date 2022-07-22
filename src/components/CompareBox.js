@@ -1,22 +1,10 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import Text from '../components/Text';
 import '../components/compareBox.css';
+import useMobile from '../hooks/useMobile';
 
 export default function CompareBox() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const isMobile = windowWidth <= 768;
-
-  const handleWindowResize = useCallback(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, [handleWindowResize]);
+  const { isMobile } = useMobile();
 
   if (isMobile) {
     return (

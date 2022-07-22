@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React from 'react';
 import desktopStories from '../assets/home/desktop/beautiful-stories.jpg';
 import desktopCreate from '../assets/home/desktop/create-and-share.jpg';
 import desktopDesigned from '../assets/home/desktop/designed-for-everyone.jpg';
@@ -14,6 +14,7 @@ import mobileCreate from '../assets/home/mobile/create-and-share.jpg';
 import mobileDesigned from '../assets/home/mobile/designed-for-everyone.jpg';
 import mobileFeaturesHero from '../assets/features/mobile/hero.jpg';
 import mobilePricingHero from '../assets/pricing/mobile/hero.jpg';
+import useMobile from '../hooks/useMobile';
 
 const imgDesktopUrls = {
   stories: desktopStories,
@@ -40,35 +41,23 @@ const imgMobileUrls = {
 };
 
 export default function Image(props) {
+  const { isMobile, isTablet } = useMobile();
+
   const { alt, image, className } = props;
 
   const imgDesktopUrl = imgDesktopUrls[image];
   const imgTabletUrl = imgTabletUrls[image];
   const imgMobileUrl = imgMobileUrls[image];
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   let imageUrl;
 
-  if (windowWidth < 768) {
+  if (isMobile) {
     imageUrl = imgMobileUrl;
-  } else if (windowWidth >= 768 && windowWidth < 1280) {
+  } else if (isTablet) {
     imageUrl = imgTabletUrl;
   } else {
     imageUrl = imgDesktopUrl;
   }
-
-  const handleWindowResize = useCallback(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, [handleWindowResize]);
 
   return <img src={imageUrl} alt={alt} className={className} />;
 }

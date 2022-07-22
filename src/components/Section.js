@@ -1,9 +1,12 @@
-import React, { useEffect, useCallback, useState } from 'react';
+import React from 'react';
 import InfoSection from './InfoSection';
 import Image from './Image';
 import './section.css';
+import useMobile from '../hooks/useMobile';
 
 export default function Section(props) {
+  const { isMobile } = useMobile();
+
   const {
     image,
     alt,
@@ -17,21 +20,6 @@ export default function Section(props) {
     button,
     line,
   } = props;
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const isMobile = windowWidth <= 768;
-
-  const handleWindowResize = useCallback(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleWindowResize);
-
-    return () => {
-      window.removeEventListener('resize', handleWindowResize);
-    };
-  }, [handleWindowResize]);
 
   if (isMobile) {
     return (
