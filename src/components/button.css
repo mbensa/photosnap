@@ -14,6 +14,11 @@ button {
   color: var(--white);
 }
 
+.darkBtn:hover {
+  background-color: var(--grey);
+  color: var(--black);
+}
+
 .whiteBtn {
   background-color: var(--white);
   color: var(--black);

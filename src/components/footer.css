@@ -82,7 +82,7 @@
 @media (min-width: 768px) {
   .footerContainer {
     display: flex;
-    padding: 64px 30px;
+    padding: 64px 40px;
   }
 
   .firstFooterContainer {

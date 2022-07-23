@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import Main from './pages/Main';
+import Features from './pages/Features';
 
 export default function App() {
   return (
-    <div className="mainContainer">
-      <Main />
-    </div>
+    <main className="mainContainer">
+      <Features />
+    </main>
   );
 }

@@ -1,0 +1,26 @@
+/********************************
+*********Features Page***********
+********************************/
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 65px 30px;
+  gap: 55px;
+}
+
+@media (min-width: 768px) {
+  .featuresContainer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 110px 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .featuresContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 160px 165px;
+  }
+}

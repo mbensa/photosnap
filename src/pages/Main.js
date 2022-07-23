@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
-import CompareBox from '../components/CompareBox';
 
 export default function Main() {
   return (
@@ -65,7 +64,7 @@ export default function Main() {
           cardHeading="Architecturals"
           cardAuthor="by Samantha Brooke"></Card>
       </section>
-      <section className="featuresContainer">
+      <section className="featuresContainerMain">
         <FeatureBox
           feature="responsive"
           alt="image of a mobile and tablet"
@@ -83,7 +82,6 @@ export default function Main() {
           text="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "></FeatureBox>
       </section>
       <Footer />
-      <CompareBox />
     </>
   );
 }

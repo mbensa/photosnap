@@ -53,7 +53,7 @@
   }
 }
 
-.featuresContainer {
+.featuresContainerMain {
   display: flex;
   flex-direction: column;
   padding: 80px 30px;
@@ -61,13 +61,13 @@
 }
 
 @media (min-width: 768px) {
-  .featuresContainer {
+  .featuresContainerMain {
   padding: 80px 150px;
   }
 }
 
 @media (min-width: 1280px) {
-  .featuresContainer {
+  .featuresContainerMain {
   flex-direction: row;
   }
 }
