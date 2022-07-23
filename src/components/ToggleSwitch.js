@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './toggleSwitch.css';
 import Text from './Text';
 
-export default function ToggleSwitch() {
-  const [isToggled, setIsToggled] = useState(false);
-
-  const onToggle = () => setIsToggled(!isToggled);
+export default function ToggleSwitch(props) {
+  const { onToggle, isToggled } = props;
 
   return (
     <div className="toggleSwitchContainer">
@@ -22,5 +20,3 @@ export default function ToggleSwitch() {
     </div>
   );
 }
-
-//put state in parent container and then pass down isToggled and on Toggle as props

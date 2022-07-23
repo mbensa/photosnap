@@ -1,0 +1,51 @@
+/********************************
+*********Pricing Page************
+********************************/
+.planBoxOuterContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.planContainer {
+  padding: 65px 30px;
+}
+
+.planBoxContainer {
+  margin-bottom: 25px;
+}
+
+.planBoxContainer:last-child {
+  margin-bottom: 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .planContainer {
+    padding: 110px 40px;
+  }
+
+
+}
+
+@media (min-width: 1280px) {
+  .planContainer {
+    padding: 120px 165px;
+  }
+
+  .planBoxOuterContainer {
+    flex-direction: row;
+  }
+
+  .planBoxOuterContainer {
+    gap: 40px;
+  }
+  .compareBoxContainer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .compareBoxContainer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

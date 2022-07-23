@@ -151,7 +151,7 @@ export default function CompareBox() {
     );
   } else {
     return (
-      <div className="compareBoxContainer">
+      <div>
         <Text type="h2" className="compareBoxTitle">
           COMPARE
         </Text>

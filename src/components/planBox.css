@@ -125,4 +125,8 @@ input:checked + label > .planBoxLine {
   input:checked + label {
     transform: scale(1.1);
   }
+
+  .planBoxLabel {
+    height: 308px;
+  }
 }

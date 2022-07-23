@@ -4,6 +4,8 @@
 
 .toggleSwitchContainer {
   display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
 }
 
 .toggle-switch {
