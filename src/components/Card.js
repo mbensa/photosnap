@@ -100,18 +100,21 @@ export default function Card(props) {
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div id="overlay"></div>
       <div className="cardTextContainer">
-        <Text type="p" className="cardDate">
-          {cardDate}
-        </Text>
-        <Text type="h4">{cardHeading}</Text>
-        <Text type="p" className="cardAuthor">
-          {cardAuthor}
-        </Text>
-        <hr />
-        <Button buttonClass="opaqueWhite cardBtn" icon={true}>
-          READ STORY
-        </Button>
+        <div className="cardText">
+          <Text type="p" className="cardDate">
+            {cardDate}
+          </Text>
+          <Text type="h4">{cardHeading}</Text>
+          <Text type="p" className="cardAuthor">
+            {cardAuthor}
+          </Text>
+          <hr />
+          <Button buttonClass="opaqueWhite cardBtn" icon={true}>
+            READ STORY
+          </Button>
+        </div>
       </div>
     </div>
   );

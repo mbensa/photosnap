@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../components/Image';
 import Text from '../components/Text';
 import Button from '../components/Button';
 import heroImage from '../assets/stories/mobile/moon-of-appalacia.jpg';
