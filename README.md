@@ -49,5 +49,5 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## Author
 
 - Website - [Mojca Bensa](https://www.mbensa.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- GitHub - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mbensa](https://www.frontendmentor.io/profile/mbensa)
+- GitHub - [@mbensa](https://github.com/mbensa/photosnap)
