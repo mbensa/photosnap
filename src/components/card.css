@@ -35,6 +35,8 @@
 
 .cardText {
   padding: 0 40px 40px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 hr {

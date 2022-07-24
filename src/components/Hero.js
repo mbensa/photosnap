@@ -6,7 +6,7 @@ import './hero.css';
 
 export default function Hero() {
   return (
-    <div className="heroContainer">
+    <section className="heroContainer">
       <img src={heroImage} className="heroImage" alt="hazy full moon" />
       <div className="heroTextContainer">
         <Text type="h5">LAST MONTH'S FEATURED STORY</Text>
@@ -26,6 +26,6 @@ export default function Hero() {
           READ THE STORY
         </Button>
       </div>
-    </div>
+    </section>
   );
 }
