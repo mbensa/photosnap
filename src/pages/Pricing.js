@@ -73,9 +73,9 @@ export default function Pricing() {
             subtext="per month"
             btnText="PICK PLAN"
             inputName="radio1"
-            inputId="planBox2"
+            inputId="planBox3"
             onChange={handleChange}
-            checked={active === 'planBox2'}
+            checked={active === 'planBox3'}
           />
         </div>
       </section>

@@ -18,14 +18,18 @@
   margin-bottom: 0;
 }
 
-
+.compareBoxContainer {
+  padding: 0 30px 65px 30px;
+}
 
 @media (min-width: 768px) {
   .planContainer {
     padding: 110px 40px;
   }
 
-
+  .compareBoxContainer {
+    padding: 0 40px 110px 40px;
+  }
 }
 
 @media (min-width: 1280px) {
