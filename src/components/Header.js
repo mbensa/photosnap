@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from '../assets/shared/desktop/logo.svg';
 import Text from './Text';
 import './header.css';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [toggle, setToggle] = React.useState(false);
@@ -18,19 +19,19 @@ export default function Header() {
 
         <ul className={`nav-menu${toggle ? ' active' : ''}`}>
           <li className="nav-item">
-            <a className="nav-link">
+            <Link to="/stories" className="nav-link">
               <Text type="h5">STORIES</Text>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">
+            <Link to="/features" className="nav-link">
               <Text type="h5">FEATURES</Text>
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link">
+            <Link to="/pricing" className="nav-link">
               <Text type="h5">PRICING</Text>
-            </a>
+            </Link>
           </li>
           <li className="nav-button">
             <Button buttonClass="darkBtn">GET AN INVITE</Button>

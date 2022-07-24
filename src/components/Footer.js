@@ -4,6 +4,7 @@ import Button from './Button';
 import Social from './Social';
 import './footer.css';
 import { ReactComponent as LogoWhiteSvg } from '../assets/shared/desktop/logoWhite.svg';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -16,18 +17,26 @@ export default function Footer() {
           <Social socialClass="socialMedia"></Social>
         </div>
         <div className="textFooterContainer">
-          <Text type="h5" className="textFooter">
-            HOME
-          </Text>
-          <Text type="h5" className="textFooter">
-            STORIES
-          </Text>
-          <Text type="h5" className="textFooter">
-            FEATURES
-          </Text>
-          <Text type="h5" className="textFooter">
-            PRICING
-          </Text>
+          <Link to="/" className="textFooterLink">
+            <Text type="h5" className="textFooter">
+              HOME
+            </Text>
+          </Link>
+          <Link to="/stories" className="textFooterLink">
+            <Text type="h5" className="textFooter">
+              STORIES
+            </Text>
+          </Link>
+          <Link to="/features" className="textFooterLink">
+            <Text type="h5" className="textFooter">
+              FEATURES
+            </Text>
+          </Link>
+          <Link to="/pricing" className="textFooterLink">
+            <Text type="h5" className="textFooter">
+              PRICING
+            </Text>
+          </Link>
         </div>
       </div>
       <div className="secondFooterContainer">
