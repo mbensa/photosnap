@@ -5,8 +5,34 @@ import Card from '../components/Card';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
+import { featuresData } from '../pages/featuresData';
+import { data } from '../pages/data';
 
 export default function Main() {
+  const features = featuresData.slice(0, 3).map((item) => {
+    return (
+      <FeatureBox
+        key={item.id}
+        feature={item.feature}
+        title={item.title}
+        text={item.text}
+        alt={item.alt}
+      />
+    );
+  });
+
+  const cardsMain = data.slice(0, 4).map((item) => {
+    return (
+      <Card
+        key={item.id}
+        image={item.bgImage}
+        cardHeading={item.title}
+        cardAuthor={item.author}
+        cardDate={item.date}
+      />
+    );
+  });
+
   return (
     <>
       <Header />
@@ -42,45 +68,8 @@ export default function Main() {
           btnText="VIEW THE STORIES"
           dark></Section>
       </section>
-      <section className="cardContainerMain">
-        <Card
-          image="mountains"
-          alt="mountains"
-          cardHeading="The Mountains"
-          cardAuthor="by John Appleseed"></Card>
-        <Card
-          image="city"
-          alt="big city"
-          cardHeading="Sunset Cityscapes"
-          cardAuthor="by Benjamin Cruz"></Card>
-        <Card
-          image="voyage"
-          alt="person hiking"
-          cardHeading="18 Days Voyage"
-          cardAuthor="by Alexei Borodin"></Card>
-        <Card
-          image="architecturals"
-          alt="skyscraper"
-          cardHeading="Architecturals"
-          cardAuthor="by Samantha Brooke"></Card>
-      </section>
-      <section className="featuresContainerMain">
-        <FeatureBox
-          feature="responsive"
-          alt="image of a mobile and tablet"
-          title="100% Responsive"
-          text="No matter which device you’re on, our site is fully responsive and stories look beautiful on any screen."></FeatureBox>
-        <FeatureBox
-          feature="noLimit"
-          alt="infinite loop"
-          title="No Photo Upload Limit"
-          text="Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."></FeatureBox>
-        <FeatureBox
-          feature="embed"
-          alt="image of a computer and social media icons"
-          title="Available to Embed"
-          text="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. "></FeatureBox>
-      </section>
+      <section className="cardContainerMain">{cardsMain}</section>
+      <section className="featuresContainerMain">{features}</section>
       <Footer />
     </>
   );
