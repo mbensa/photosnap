@@ -8,7 +8,7 @@ import Stories from './pages/Stories';
 export default function App() {
   return (
     <main className="mainContainer">
-      <Stories />
+      <Pricing />
     </main>
   );
 }

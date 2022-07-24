@@ -1,152 +1,132 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Text from '../components/Text';
 import '../components/compareBox.css';
 import useMobile from '../hooks/useMobile';
+import CompareBoxMobileItem from './CompareBoxMobileItem';
+import CompareBoxDesktopItem from './CompareBoxDesktopItem';
 
 export default function CompareBox() {
   const { isMobile } = useMobile();
+
+  const mobileFeatures = [
+    {
+      title: 'UNLIMITED STORY POSTING',
+      basic: true,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'UNLIMITED PHOTO UPLOAD',
+      basic: true,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'EMBEDDING CUSTOM CONTENT',
+      basic: false,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'CUSTOMIZE METADATA',
+      basic: false,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'ADVANCED METRICS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'PHOTO DOWNLOADS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'SEARCH ENGINE INDEXING',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'CUSTOM ANALYTICS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+  ];
+
+  const desktopFeatures = [
+    {
+      title: 'UNLIMITED STORY POSTING',
+      basic: true,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'UNLIMITED PHOTO UPLOAD',
+      basic: true,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'EMBEDDING CUSTOM CONTENT',
+      basic: false,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'CUSTOMIZE METADATA',
+      basic: false,
+      pro: true,
+      business: true,
+    },
+    {
+      title: 'ADVANCED METRICS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'PHOTO DOWNLOADS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'SEARCH ENGINE INDEXING',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+    {
+      title: 'CUSTOM ANALYTICS',
+      basic: false,
+      pro: false,
+      business: true,
+    },
+  ];
 
   if (isMobile) {
     return (
       <div>
         <Text type="h5">THE FEATURES</Text>
         <hr className="compareLineMain" />
-        <div>
-          <Text type="h5">UNLIMITED STORY POSTING</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">UNLIMITED PHOTO UPLOAD</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">EMBEDDING CUSTOM CONTENT</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">CUSTOMIZE METADATA</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">ADVANCED METRICS</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">PHOTO DOWNLOADS</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-              <span>&#10003;</span>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">SEARCH ENGINE INDEXING</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
-        <div>
-          <Text type="h5">CUSTOM ANALYTICS</Text>
-          <div className="comparePlanTypeContainer">
-            <div>
-              <Text type="h6">BASIC</Text>
-            </div>
-            <div>
-              <Text type="h6">PRO</Text>
-            </div>
-            <div>
-              <Text type="h6">BUSINESS</Text>
-              <span>&#10003;</span>
-            </div>
-          </div>
-        </div>
-        <hr className="compareLine" />
+
+        {mobileFeatures.map((item) => (
+          <Fragment key={item.title}>
+            <CompareBoxMobileItem
+              title={item.title}
+              basic={item.basic}
+              pro={item.pro}
+              business={item.business}
+            />
+            <hr className="compareLine" />
+          </Fragment>
+        ))}
       </div>
     );
   } else {
@@ -170,78 +150,18 @@ export default function CompareBox() {
           </Text>
         </div>
         <hr className="compareLineMain" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            UNLIMITED STORY POSTING
-          </Text>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            UNLIMITED PHOTO UPLOAD
-          </Text>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            EMBEDDING CUSTOM CONTENT
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            CUSTOMIZE METADATA
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            ADVANCED METRICS
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            PHOTO DOWNLOADS
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            SEARCH ENGINE INDEXING
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
-        <div className="compareBoxPlan">
-          <Text type="h5" className="compareBoxWidth compareBoxStyle">
-            CUSTOM ANALYTICS
-          </Text>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth"></span>
-          <span className="compareBoxWidth">&#10003;</span>
-        </div>
-        <hr className="compareLine" />
+
+        {desktopFeatures.map((item) => (
+          <Fragment key={item.title}>
+            <CompareBoxDesktopItem
+              title={item.title}
+              basic={item.basic}
+              pro={item.pro}
+              business={item.business}
+            />
+            <hr className="compareLine" />
+          </Fragment>
+        ))}
       </div>
     );
   }

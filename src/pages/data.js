@@ -1,4 +1,4 @@
-export default [
+export const data = [
   {
     id: 1,
     date: 'April 16th 2020',

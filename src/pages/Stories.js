@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Card from '../components/Card';
 import Hero from '../components/Hero';
-import data from '../pages/data';
+import { data } from '../pages/data';
 import '../pages/stories.css';
 
 export default function Stories() {
