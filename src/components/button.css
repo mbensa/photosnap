@@ -2,7 +2,7 @@
 ********Button Component*********
 ********************************/
 
-button {
+.btn {
   padding: 12px 24px;
   border: none;
   display: flex;

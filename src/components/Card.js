@@ -111,7 +111,7 @@ export default function Card(props) {
             {cardAuthor}
           </Text>
           <hr />
-          <Button buttonClass="opaqueWhite cardBtn" icon={true}>
+          <Button buttonClass="opaqueWhite cardBtn btn" icon={true}>
             READ STORY
           </Button>
         </div>

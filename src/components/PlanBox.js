@@ -50,7 +50,7 @@ export default function PlanBox(props) {
         <Text type="p" className="planBoxSubtext">
           {subtext}
         </Text>
-        <Button buttonClass="darkBtn" icon={false} onClick={handleClick}>
+        <Button buttonClass="darkBtn btn" icon={false} onClick={handleClick}>
           {btnText}
         </Button>
       </label>

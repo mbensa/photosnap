@@ -34,7 +34,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="nav-button">
-            <Button buttonClass="darkBtn">GET AN INVITE</Button>
+            <Button buttonClass="darkBtn btn">GET AN INVITE</Button>
           </li>
         </ul>
 

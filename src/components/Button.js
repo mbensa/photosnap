@@ -7,9 +7,9 @@ export default function Button(props) {
   const { children, buttonClass, icon, dark, ...rest } = props;
 
   return (
-    <button className={buttonClass} {...rest}>
+    <div className={buttonClass} {...rest}>
       <Text type="h5">{children}</Text>
       {icon && <Icon dark={dark} />}
-    </button>
+    </div>
   );
 }

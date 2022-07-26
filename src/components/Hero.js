@@ -10,7 +10,7 @@ export default function Hero() {
       <img src={heroImage} className="heroImage" alt="hazy full moon" />
       <div className="heroTextContainer">
         <Text type="h5">LAST MONTH'S FEATURED STORY</Text>
-        <Text type="h2" className="heroTitle">
+        <Text type="h1" className="heroTitle">
           HAZY FULL MOON OF APPALACHIA
         </Text>
         <Text type="h5">
@@ -22,7 +22,7 @@ export default function Hero() {
           Kentucky and West Virginia, and while the ridges are not high, the
           terrain is extremely rugged.
         </Text>
-        <Button buttonClass="opaqueWhite" icon>
+        <Button buttonClass="opaqueWhite btn" icon>
           READ THE STORY
         </Button>
       </div>

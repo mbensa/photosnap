@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="secondFooterContainer">
-        <Button buttonClass="opaqueWhite buttonFooter" icon={true}>
+        <Button buttonClass="opaqueWhite buttonFooter btn" icon={true}>
           GET AN INVITE
         </Button>
         <Text type="p" className="copyrightFooter">

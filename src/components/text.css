@@ -2,6 +2,14 @@
 *********Text Copmonent**********
 ********************************/
 
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 4.17px;
+  text-transform: uppercase;
+}
+
 h2 {
   font-weight: 700;
   font-size: 2.5rem;
@@ -45,6 +53,12 @@ p {
 
 @media (min-width: 768px) {
   h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 3.33px;
+  }
+
+  h2 {
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: 3.33px;

@@ -10,7 +10,7 @@ export default function Beta() {
       <Text className="betaText" type="h2">
         WE'RE IN BETA. GET YOUR INVITE TODAY!
       </Text>
-      <Button buttonClass="opaqueWhite betaButton" icon>
+      <Button buttonClass="opaqueWhite betaButton btn" icon>
         GET AN INVITE
       </Button>
     </div>

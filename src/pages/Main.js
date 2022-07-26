@@ -46,7 +46,7 @@ export default function Main() {
           title="CREATE AND SHARE YOUR PHOTO STORIES"
           message="Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others."
           button
-          buttonClass="opaqueWhite"
+          buttonClass="opaqueWhite btn"
           btnText="GET AN INVITE"></Section>
         <Section
           image="stories"
@@ -54,7 +54,7 @@ export default function Main() {
           title="BEAUTIFUL STORIES EVERY TIME"
           message="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
           button
-          buttonClass="opaqueDark"
+          buttonClass="opaqueDark btn"
           btnText="VIEW THE STORIES"
           dark></Section>
         <Section
@@ -64,7 +64,7 @@ export default function Main() {
           title="DESIGNED FOR EVERYONE"
           message="Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
           button
-          buttonClass="opaqueDark"
+          buttonClass="opaqueDark btn"
           btnText="VIEW THE STORIES"
           dark></Section>
       </section>
