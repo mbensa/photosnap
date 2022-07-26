@@ -43,7 +43,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .heroContainer {
     background-image: url("../assets/stories/desktop/moon-of-appalacia.jpg");
     padding: 120px 110px;

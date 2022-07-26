@@ -125,7 +125,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .footerContainer {
     padding: 60px 170px;
   }

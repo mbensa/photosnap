@@ -31,15 +31,7 @@
   .infoSectionMessage {
     padding: 20px 0 48px 0;
   }
-}
 
-@media (min-width: 1280px) {
-  .infoSectionContainer {
-  padding: 170px 110px ;
-  }
-}
-
-@media (min-width: 768px) {
   .infoSectionLine {
     height: 50%;
     width: 6px;
@@ -47,3 +39,10 @@
     top: auto;
   }
 }
+
+@media (min-width: 1024px) {
+  .infoSectionContainer {
+  padding: 170px 110px ;
+  }
+}
+

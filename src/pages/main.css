@@ -1,23 +1,11 @@
 /********************************
 ************Main Page************
 ********************************/
-
-.cardContainer {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-  .cardContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .cardContainer {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.featuresContainerMain {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 30px;
+  gap: 55px;
 }
 
 .cardContainerMain {
@@ -25,17 +13,41 @@
   grid-template-columns: 1fr;
 }
 
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media (min-width: 768px) {
   .cardContainerMain {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featuresContainerMain {
+    padding: 80px 150px;
+    }
 }
 
-@media (min-width: 1280px) {
+
+
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .cardContainerMain {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .featuresContainerMain {
+    flex-direction: row;
+    }
 
   .cardBg:hover {
     position: relative;
@@ -53,24 +65,9 @@
   }
 }
 
-.featuresContainerMain {
-  display: flex;
-  flex-direction: column;
-  padding: 80px 30px;
-  gap: 55px;
-}
 
-@media (min-width: 768px) {
-  .featuresContainerMain {
-  padding: 80px 150px;
-  }
-}
 
-@media (min-width: 1280px) {
-  .featuresContainerMain {
-  flex-direction: row;
-  }
-}
+
 
 
 
