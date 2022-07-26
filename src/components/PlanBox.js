@@ -38,7 +38,6 @@ export default function PlanBox(props) {
         onChange={onChange}
       />
       <label htmlFor={inputId} className="planBoxLabel">
-        <hr className="planBoxLine" />
         <Text type="h3" className="planBoxHeading">
           {heading}
         </Text>
