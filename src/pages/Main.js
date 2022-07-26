@@ -16,7 +16,6 @@ export default function Main() {
         feature={item.feature}
         title={item.title}
         text={item.text}
-        alt={item.alt}
       />
     );
   });

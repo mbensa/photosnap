@@ -15,7 +15,6 @@ export default function Features() {
         feature={item.feature}
         title={item.title}
         text={item.text}
-        alt={item.alt}
       />
     );
   });
@@ -28,7 +27,6 @@ export default function Features() {
           infoFirst
           line
           image="featuresHero"
-          alt="person holidng a camera in his/her hand"
           title="FEATURES"
           message="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."
           darkBg></Section>
