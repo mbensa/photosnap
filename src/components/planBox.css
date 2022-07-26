@@ -85,7 +85,7 @@ input:checked + .planBoxLabel::before  {
   display: block;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .planBoxLabel {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -116,7 +116,7 @@ input:checked + .planBoxLabel::before  {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   input + label {
     transition: transform 0.5s;
   }
