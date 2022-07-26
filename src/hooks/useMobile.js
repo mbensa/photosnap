@@ -8,8 +8,8 @@ export default function useMobile() {
   }, []);
 
   const isMobile = windowWidth <= 768;
-  const isTablet = windowWidth > 768 && windowWidth <= 1280;
-  const isDesktop = windowWidth > 1280;
+  const isTablet = windowWidth > 768 && windowWidth < 1280;
+  const isDesktop = windowWidth >= 1280;
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
