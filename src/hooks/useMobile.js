@@ -7,8 +7,8 @@ export default function useMobile() {
     setWindowWidth(window.innerWidth);
   }, []);
 
-  const isMobile = windowWidth <= 768;
-  const isTablet = windowWidth > 768 && windowWidth < 1280;
+  const isMobile = windowWidth < 768;
+  const isTablet = windowWidth >= 768 && windowWidth < 1280;
   const isDesktop = windowWidth >= 1280;
 
   useEffect(() => {
