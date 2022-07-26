@@ -100,7 +100,7 @@ export default function Card(props) {
 
   return (
     <div className="cardBg" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <div id="overlay"></div>
+      <div className="cardOverlay"></div>
       <div className="cardTextContainer">
         <div className="cardText">
           <Text type="p" className="cardDate">
