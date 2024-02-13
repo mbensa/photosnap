@@ -3,6 +3,7 @@
 ********************************/
 .featuresContainerMain {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   padding: 80px 30px;
   gap: 55px;
